@@ -1,0 +1,241 @@
+.body {
+  background-color: #ffffff;
+  color: black;
+}
+
+.lilogo {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  max-width: 50px;
+}
+
+.header {
+  display: grid;
+  grid-column: 2;
+  text-shadow: 1px 1px 3px black;
+  font-family: "Monotype Corsiva", cursive;
+  -webkit-text-stroke: 0.1px black;
+  color: #ddd;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.myname {
+  float: left;
+  font-size: 80px;
+}
+
+.ldmode {
+  font-size: 20px;
+  max-width: 130px;
+  float: left;
+  text-shadow: 1px 1px 1px black;
+  font-family: courier;
+}
+
+
+#sections {
+  grid-column: 1;
+  grid-area: auto;
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px;
+  text-shadow: 1px 1px 1px black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#aboutme {
+  grid-area: auto;
+  background-color: #7d7c7c;
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 5px;
+  border: black dotted 2px;
+  position: absolute;
+  top: 140px;
+  right: 20px;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.images {
+  position: absolute;
+  background-color: #7d7c7c;
+  width: 340px;
+  height: 500px;
+  top: 520px;
+  right: 1030px;
+  border-radius: 10px;
+  border: black dotted 2px;
+  
+}
+
+#skills {
+  display: grid;
+  grid-column: 2;
+  position: absolute;
+  background-color: #7d7c7c;
+  width: 445px;
+  height: 360px;
+  top: 660px;
+  right: 550px;
+  border-radius: 10px;
+  border: black dotted 2px;
+  
+}
+
+.sk1 {
+  display: grid;
+  grid-area: 1 / 1 / 4 / 4;
+  width: 200px;
+}
+.sk2 {
+  display: grid;
+  grid-area: 1 / 4 / 4 / 4;
+  width: 200px;
+}
+
+#exp {
+  position: absolute;
+  background-color: #7d7c7c;
+  width: 445px;
+  height: 360px;
+  top: 660px;
+  right: 45px;
+  border-radius: 10px;
+  border: black dotted 2px;
+  
+}
+
+@keyframes float {
+0% {
+  box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+  transform: translatey(0px);
+}
+50% {
+  box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+  transform: translatey(-5px);
+}
+100% {
+  box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+  transform: translatey(0px);
+}
+}
+
+#contact {
+width: 340px !important;
+margin: auto !important;
+position: absolute;
+  top: 170px;
+  right: 1030px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+ .header {
+ display:block;
+ margin-left: auto;
+ margin-right: auto;
+ float: none;
+}
+}
+
+.projects {
+display: flex;
+height: 300px;
+flex-direction: row;
+width: 1000px;
+}
+
+.p2 {
+align: center;
+padding: 10px;
+}
+
+.p3 {
+align: center;
+padding: 10px;
+}
+
+.p4 {
+align: center;
+padding: 10px;
+}
+
+//Animation List
+ #slider {
+    opacity:1;
+    transition: opacity 1s; 
+}
+
+#slider.fadeOut {
+    opacity:0;
+}
+
+//darkmode
+
+*, *::before, *::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+.dark-mode {
+background-color: #272829;
+color: #f0f0f0;
+text-shadow: 1px 1px 3px black;
+transition: all 0.4s ease-in;
+}
+
+.toggle-switch {
+position: relative;
+display: inline-block;
+width: 2rem;
+height: .75rem;
+margin-bottom: 0rem;
+margin-inline: auto;
+}
+
+.toggle-switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+transition: all 0.4s ease-in;
+border-radius: 0.13rem;
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 0.33rem;
+width: 0.33rem;
+left: 0.25rem;
+bottom: 0.20rem;
+background-color: white;
+transition: 0.4s;
+border-radius: 50%;
+}
+
+input:checked + .slider {
+background-color: #2196f3;
+}
+
+input:focus + .slider {
+box-shadow: 0 0 2px #2196f3;
+}
+
+input:checked + .slider:before {
+transform: translateX(1rem);
+}
