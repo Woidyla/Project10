@@ -18,11 +18,11 @@ modeToggle.addEventListener('click', toggleMode);
 //Image slider
 let imgArray = [
   'https://raw.githubusercontent.com/Woidyla/mywebsite/main/Media/eliot.jpg',
-    'https://raw.githubusercontent.com/Woidyla/Project10/main/8205FBB3-97A7-4675-BB26-AD5DAECFF2FE.jpeg',
+    'https://raw.githubusercontent.com/Woidyla/Project10/main/Media/8205FBB3-97A7-4675-BB26-AD5DAECFF2FE.jpeg',
   
-'https://raw.githubusercontent.com/Woidyla/Project10/main/03D5C28F-081D-4E54-94C5-A899EFD9FD6C.jpeg',
+'https://raw.githubusercontent.com/Woidyla/Project10/main/Media/03D5C28F-081D-4E54-94C5-A899EFD9FD6C.jpeg',
   
-'https://raw.githubusercontent.com/Woidyla/Project10/main/C53495DA-CDF8-40B0-AB43-866449F8F0DD.jpeg'],
+'https://raw.githubusercontent.com/Woidyla/Project10/main/Media/C53495DA-CDF8-40B0-AB43-866449F8F0DD.jpeg'],
     curIndex = 0;
     imgDuration = 3000;
 
